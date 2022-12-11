@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find limo_base)/launch/limo_base.launch" />
+    <include file="$(find astra_camera)/launch/dabai_u3.launch" />
+    <node name="lane_tracking" pkg="lane_tracking" type="lane_tracking.py" output="screen" />
+
+</launch>
